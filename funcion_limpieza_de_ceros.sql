@@ -1,0 +1,3 @@
+CREATE OR REPLACE FUNCTION kepepcoding.fnc_limpieza_enteros(valor INT64) 
+RETURNS INT64 AS 
+((SELECT CASE WHEN valor IS NULL THEN -999999 ELSE valor END));
